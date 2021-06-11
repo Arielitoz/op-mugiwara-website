@@ -1,11 +1,32 @@
+/* GUIDE & REFERENCES
+    ____________________
+    Color Logo
+    Light-blue: #40b6e9
+    Light-blue2: #41b7ea
+    Medium-blue: #3a95ce
+    dark-blue: #326fb0
+    darker-blue: #316bad
+    ____________________
+
+    Fonts: 
+    Mugiwara - One Piece logo font
+
+*/
+
+@font-face {
+    font-family: mugiwara;
+    src: url("../Fonts/one_piece.ttf");
+}
+
 *{
     margin: 0;
     padding: 0;
+    font-family: mugiwara;
 }
+
 .img-background{
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url("../../Assets/Images/going-merry-background.jpg");
-    /* background-image: url("../../Assets/Images/going-merry-background.jpg"); */
     /* background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url("../../Assets/Images/thousand-sunny-background.jpg"); */
     background-position: center;
     background-size: cover;
@@ -13,6 +34,9 @@
     position: relative;
 }
 
+body{
+    color: white;
+}
 .nav-bar{
     display: flex;
     padding: 40px 120px;
@@ -43,13 +67,6 @@
     font-size: 18px;
 }
 
-/*  Color Logo
-    Light-blue: #40b6e9
-    Light-blue2: #41b7ea
-    Medium-blue: #3a95ce
-    dark-blue: #326fb0
-    darker-blue: #316bad
-*/
 .nav-links ul li::after{
     content: '';
     width: 0;
@@ -70,6 +87,7 @@
     background: #3a95ce;
     font-weight: bold;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .nav-links .btn{

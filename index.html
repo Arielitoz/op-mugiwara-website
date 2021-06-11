@@ -17,9 +17,15 @@
             </div>
             <div class="nav-links">
                 <ul>
-                 <a href="#"><li>Home</li></a>
-                 <a href="#"><li>Crew</li></a>
-                 <a href="#"><li>History</li></a>
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>Crew</li>
+                    </a>
+                    <a href="#">
+                        <li>History</li>
+                    </a>
                 </ul>
                 <button type="button" class="btn">Join the Crew!</button>
             </div>
@@ -27,9 +33,84 @@
         <div class="banner-title">
             <h1>DO IT STRAWHAT! LIGHT UP THE LIGHT OF SHANDORAAAAAA !!!<br>
                 CAN YOU HEAR IT , POPS? THE CITY OF GOLD EXISTS! FOR 400 YEARS IT' S BEEN HERE IN THE SKYYYYYY!</h1>
-            <button type="button" class="btn">I want to live!</button>
+            <button type="button" class="btn" onclick="validarJson1()">I want to live!</button>
+            <button type="button" class="btn" onclick="validarJson2()">I want to live!</button>
+            <button type="button" class="btn" onclick="validarJson3()">I want to live!</button>
         </div>
-    </div>
+
+
+        <!-- <iframe width="964" height="542" src="https://www.youtube.com/embed/Q41sefpItDo?loop=1&autoplay=1" title="YouTube video player" frameborder="0" allow="autoplay;loop"></iframe>        </div>
+                 -->
+        <iframe width="813" height="542"
+            src="https://www.youtube.com/embed/yjuImlE3-LQ?list=PL-eygcQk3I_oVhsCv3YefWj5ZKukk_maZ?autoplay=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+
 </body>
 
 </html>
+<script>
+    //Teste Objetos
+    const isTrue = true;
+    var teste = {
+        test: {
+            isCorrect: true,
+            captain: "Luffy"
+        },
+        "crew":
+            [
+                {
+                    "name": "zoro",
+                    "occupation": "swordsman"
+                }
+            ],
+        boats: {
+            shipName: "Going Merry",
+            "alive": false,
+            "presentNow": "no"
+        }
+    }
+
+
+    function validarJson1() {
+        if (isTrue) {
+            //Assim chama
+            alert(teste.test.captain);
+            alert(teste.boats.shipName);
+        }
+        if(teste.test.isCorrect){
+            alert("a")
+        }
+        if(teste["test"].isCorrect){
+            alert("b")
+        }
+        // if(teste[test].isCorrect){
+        //     alert("c")
+        // }
+        // if(teste.test[isCorrect]){
+        //     alert("d")
+        // }
+        if(teste.test["isCorrect"]){
+            alert("e")
+        }
+    }
+
+    function validarJson2() {
+        if (isTrue) {
+            // alert(teste[test].captain);
+            alert(teste.crew[0].name)
+            // alert(teste.boats[shipName]);
+        }
+    }
+
+    function validarJson3() {
+        if (isTrue) {
+            alert(teste["test"].captain);
+            alert(teste["boats"].shipName);
+            alert(teste.boats["shipName"]);
+        }
+    }
+
+</script>
