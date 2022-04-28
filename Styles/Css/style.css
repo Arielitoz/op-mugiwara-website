@@ -18,15 +18,15 @@
     src: url("../Fonts/one_piece.ttf");
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: mugiwara;
 }
 
-.img-background{
+.img-background {
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url("../../Assets/Images/going-merry-background.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("../../Assets/Images/going-merry-background.jpg");
     /* background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url("../../Assets/Images/thousand-sunny-background.jpg"); */
     background-position: center;
     background-size: cover;
@@ -34,40 +34,45 @@
     position: relative;
 }
 
-body{
+body {
     color: white;
 }
-.nav-bar{
+
+.nav-bar {
     display: flex;
-    padding: 40px 120px;
+    padding: 40px 140px;
 }
 
-.nav-bar img{
-    width: 135px;
+.nav-logo img {
+    position: relative;
+    top: -25px;
+    left: -30px;
+    height: 110px;
+    width: 150px;
 }
 
-.nav-links{
+.nav-links {
     flex: 1;
 }
 
-.nav-links ul{
+.nav-links ul {
     margin-left: 50px;
     display: inline;
 }
 
-.nav-links ul li{
+.nav-links ul li {
     list-style: none;
     display: inline-block;
     padding: 8px 25px;
 }
 
-.nav-links a{
+.nav-links a {
     color: seashell;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 24px;
 }
 
-.nav-links ul li::after{
+.nav-links ul li::after {
     content: '';
     width: 0;
     height: 2px;
@@ -77,11 +82,11 @@ body{
     transition: .5s;
 }
 
-.nav-links ul li:hover::after{
+.nav-links ul li:hover::after {
     width: 100%;
 }
 
-.btn{
+.btn {
     padding: 10px 20px;
     border: 0;
     background: #3a95ce;
@@ -90,6 +95,172 @@ body{
     border-radius: 5px;
 }
 
-.nav-links .btn{
+.nav-links .btn {
     float: right;
 }
+
+.banner-title {
+    margin: 5px 130px;
+}
+
+.banner-title h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.banner-title h1 span {
+    color: #3a95ce;
+}
+
+.vertical-bar {
+    height: 100%;
+    background: #3a95ce;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.search-icon {
+    height: 60%;
+    width: 80px;
+}
+
+.search-icon .fa-solid {
+    margin: 45px 23px;
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.social-icons {
+    height: 40%;
+    width: 80px;
+    background: #316bad;
+    padding-top: 27%;
+    bottom: 0;
+    position: absolute;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-icons .fa-brands {
+    margin: 15px 23px;
+    display: block;
+    padding: 9px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+.notifications {
+    display: flex;
+    width: 400px;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: red;
+    align-items: center;
+}
+
+.contents {
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+.contents a{
+   text-decoration: none;
+   color: #fff;
+   font-size: 13px
+}
+
+.contents p{
+    text-align: right;
+    margin-top: 10px;
+}
+
+.notifications-img {
+    flex-basis: 50%;
+}
+
+.nav-bar .fa {
+    display: none;
+}
+
+/* .banner-title h4{
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-left: 500px;
+} */
+
+@media (max-width: 700px){
+    .vertical-bar{
+        display: none;
+    }
+
+    .banner-title {
+        margin: 80px 40px;
+    }
+
+    .banner-title h1{
+        font-size: 40px;
+    }
+
+    .notifications {
+        width: 100%;
+    }
+
+    .nav-bar {
+        padding: 10px 40px;
+    }
+
+    .fa-bars {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+
+    .nav-bar .fa {
+        display: block;
+        color: #fff;
+        margin: 10px 25px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        height: 100vh;
+        width: 200px;
+        background: #3a95ce;
+        top: 0;
+        right: -200px;
+        position: absolute;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+
+    .nav-links ul a{
+        display: block;
+    }
+
+    .nav-links .btn{
+        float: none;
+        margin-left: 25px;
+        margin-top: 10px;
+        color:#fff;
+        background-color: black;
+    }
+
+}
+
+/* @media(min-width: 400px){
+    body{
+        display: none  ;
+    }
+} */

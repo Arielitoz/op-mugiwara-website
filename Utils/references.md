@@ -1,10 +1,10 @@
-# References & Guides:
+# References & Guides
 
-### Youtube Classes:
+## Youtube Classes
 
 https://www.youtube.com/watch?v=DTEY490qmWE
 
-### Object Literals & Json :
+### Object Literals & Json
 
 https://mkyong.com/javascript/how-to-access-json-object-in-javascript/
 https://medium.com/front-end-field-guide/react-file-structure-55e94d15c3be

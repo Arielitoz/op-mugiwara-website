@@ -6,16 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Styles/Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>The One Piece</title>
 </head>
 
 <body>
     <div class="img-background">
         <div class="nav-bar">
-            <div class="logo">
-                <img src="./Assets/Images/op_logoMin.png" alt="">
+            <div class="nav-logo">
+               <a href="#"><img src="./Assets/Images/op_logo.png"></a>
             </div>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-close" onclick="closeMenu()"></i>
                 <ul>
                     <a href="#">
                         <li>Home</li>
@@ -29,88 +31,144 @@
                 </ul>
                 <button type="button" class="btn">Join the Crew!</button>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </div>
         <div class="banner-title">
-            <h1>DO IT STRAWHAT! LIGHT UP THE LIGHT OF SHANDORAAAAAA !!!<br>
-                CAN YOU HEAR IT , POPS? THE CITY OF GOLD EXISTS! FOR 400 YEARS IT' S BEEN HERE IN THE SKYYYYYY!</h1>
-            <button type="button" class="btn" onclick="validarJson1()">I want to live!</button>
-            <button type="button" class="btn" onclick="validarJson2()">I want to live!</button>
-            <button type="button" class="btn" onclick="validarJson3()">I want to live!</button>
+            <h1>"Minha fortuna terá que ser encontrada, o tesouro está todo em um lugar só, por isso o chamei de <span>ONE PIECE</span>!"</h1>
+            <h4>-Gol D. Roger</h4>
+            <button type="button" class="btn">Adventure</button>
         </div>
+        
+        <div class="vertical-bar">
+            <div class="search-icon">
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/ariel-francisco-581a89209/" target="blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Arielitoz" target="blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/darthvilha/" target="blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <!-- <div class="notifications">
+            <div class="contents">
+                <small>Join Crew</small>
+                <p><a href="">Prev</a><a href="">Next</a></p>
+            </div>
+            <div class="notification-img">
+                <img src="./Assets/Images/manga-one-piece-manga-jolly-roger-icons-pirate-transparent-png-1989831.png" alt="">
+            </div>
+        </div> -->
+        <!-- <div>
+            <div class="banner-title">
+                <h1>Era uma vez um homem chamado Gol D. Roger que era o rei dos Piratas, ele tinha  Fama , Poder e Riquezas, além de seus maiores sonhos... Antes que o pendurassem numa forca, essas foram suas últimas palavras: "Minha fortuna terá que ser encontrada, o tesouro está todo em um lugar só, por isso o chamei de ONE PIECE!"
+                    
+        
+            </div>
+            <div class="banner-title">
+                <h1>'Riquezas, Fama , Poder'... Um homem conquistou tudo que o mundo tinha a oferecer
+                        O rei dos piratas Gol D. Roger, antes de ser executado suas últimas palavras levaram multidões ao mar:
+                        "Querem o meu tesouro? Fiquem a vontade para pegá-lo. Procurem, nele está tudo que este mundo pode dar à vocês;"
+                    
+                    .DO IT STRAWHAT! LIGHT UP THE LIGHT OF SHANDORAAAAAA !!!<br>
+                    CAN YOU HEAR IT , POPS? THE CITY OF GOLD EXISTS! FOR 400 YEARS IT' S BEEN HERE IN THE SKYYYYYY!</h1>
+                 <button type="button" class="btn" onclick="validarJson1()">I want to live!</button>
+                <button type="button" class="btn" onclick="validarJson2()">I want to live!</button>
+                <button type="button" class="btn" onclick="validarJson3()">I want to live!</button> 
+        </div>
+       
+        </div> -->
+        <!-- <div>
+            <iframe width="1735" height="757" src="https://www.youtube.com/embed/Vvq48IwxluA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div> -->
 
+        <script>
+            var show = document.getElementById('navLinks');
+            function showMenu() {
+                show.style.right = "0";
+            }
 
-        <!-- <iframe width="964" height="542" src="https://www.youtube.com/embed/Q41sefpItDo?loop=1&autoplay=1" title="YouTube video player" frameborder="0" allow="autoplay;loop"></iframe>        </div>
-                 -->
-        <iframe width="813" height="542"
-            src="https://www.youtube.com/embed/yjuImlE3-LQ?list=PL-eygcQk3I_oVhsCv3YefWj5ZKukk_maZ?autoplay=1"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-
+            function closeMenu() {
+                show.style.right = "-200px";
+            }
+        </script>
 
 </body>
 
 </html>
 <script>
-    //Teste Objetos
-    const isTrue = true;
-    var teste = {
-        test: {
-            isCorrect: true,
-            captain: "Luffy"
-        },
-        "crew":
-            [
-                {
-                    "name": "zoro",
-                    "occupation": "swordsman"
-                }
-            ],
-        boats: {
-            shipName: "Going Merry",
-            "alive": false,
-            "presentNow": "no"
-        }
-    }
+    // //Teste Objetos
+    // const isTrue = true;
+    // var teste = {
+    //     test: {
+    //         isCorrect: true,
+    //         captain: "Luffy"
+    //     },
+    //     "crew":
+    //         [
+    //             {
+    //                 "name": "zoro",
+    //                 "occupation": "swordsman"
+    //             }
+    //         ],
+    //     boats: {
+    //         shipName: "Going Merry",
+    //         "alive": false,
+    //         "presentNow": "no"
+    //     },
+    //     maps: [],
+    // }
+
+    // var teste2 = [
+    //     {
+    //         "texto": 12312312
+    //     },
+    //     {
+    //         "texto": 1232321
+    //     }
+    // ];
 
 
-    function validarJson1() {
-        if (isTrue) {
-            //Assim chama
-            alert(teste.test.captain);
-            alert(teste.boats.shipName);
-        }
-        if(teste.test.isCorrect){
-            alert("a")
-        }
-        if(teste["test"].isCorrect){
-            alert("b")
-        }
-        // if(teste[test].isCorrect){
-        //     alert("c")
-        // }
-        // if(teste.test[isCorrect]){
-        //     alert("d")
-        // }
-        if(teste.test["isCorrect"]){
-            alert("e")
-        }
-    }
+    // function validarJson1() {
+    //     alert(teste2);
+    //     alert(teste2.texto);
+    //     alert(teste2["texto"]);
+    //     if (isTrue) {
+    //         //Assim chama
+    //         alert(teste.test.captain);
+    //         alert(teste.boats.shipName);
+    //     }
+    //     if(teste.test.isCorrect){
+    //         alert("a")
+    //     }
+    //     if(teste["test"].isCorrect){
+    //         alert("b")
+    //     }
+    //     // if(teste[test].isCorrect){
+    //     //     alert("c")
+    //     // }
+    //     // if(teste.test[isCorrect]){
+    //     //     alert("d")
+    //     // }
+    //     if(teste.test["isCorrect"]){
+    //         alert("e")
+    //     }
+    // }
 
-    function validarJson2() {
-        if (isTrue) {
-            // alert(teste[test].captain);
-            alert(teste.crew[0].name)
-            // alert(teste.boats[shipName]);
-        }
-    }
+    // function validarJson2() {
+    //     if (isTrue) {
+    //         // alert(teste[test].captain);
+    //         alert(teste.crew[0].name)
+    //         // alert(teste.boats[shipName]);
+    //     }
+    // }
 
-    function validarJson3() {
-        if (isTrue) {
-            alert(teste["test"].captain);
-            alert(teste["boats"].shipName);
-            alert(teste.boats["shipName"]);
-        }
-    }
+    // function validarJson3() {
+    //     if (isTrue) {
+    //         alert(teste["test"].captain);
+    //         alert(teste["boats"].shipName);
+    //         alert(teste.boats["shipName"]);
+    //     }
+    // }
 
 </script>
