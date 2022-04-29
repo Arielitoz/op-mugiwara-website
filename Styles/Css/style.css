@@ -34,9 +34,80 @@
     position: relative;
 }
 
+
 body {
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
 }
+
+.teste img {
+    height: 300px;
+}
+
+.container {
+    width: 1150px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .card {
+    position: relative;
+    padding: 10px;
+    width: 300px;
+    background-color: red;
+    margin: 20px;
+    border: 1px solid black;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.container .card img {
+    transition: 0.5s;
+}
+
+.container .card h1 {
+    font-size: 2rem;
+}
+
+.container .card .content {
+    padding: 20px;
+    text-align: center;
+}
+
+.container .card .content p {
+    color: blue;
+    transition: 0.5s;
+}
+
+.container .card:hover {
+    background-color: yellow;
+    color: green;
+    margin-top: -30px;
+    box-shadow: 2px 20px 25px orange;
+    border-color: rosybrown;
+}
+
+.container .card:hover img {
+    filter: invert(1);
+}
+
+.container .card:hover .content p {
+    color: purple;
+}
+
+/* .container .card .content a {
+    position: relative;
+    display: inline-block;
+    paddin: 10px 20px;
+} */
 
 .nav-bar {
     display: flex;
@@ -191,6 +262,7 @@ body {
 .nav-bar .fa {
     display: none;
 }
+
 
 /* .banner-title h4{
     font-size: 20px;
