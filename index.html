@@ -26,12 +26,22 @@
                     <a href="#">
                         <li>Home</li>
                     </a>
-                    <a href="#">
+                    <a href="#crew">
                         <li>Crew</li>
                     </a>
-                    <a href="#">
+                    <a href="">
                         <li>History</li>
                     </a>
+                    <a href="https://www.linkedin.com/in/ariel-francisco-581a89209/" target="blank">
+                        <li><i class="fa-brands fa-linkedin"></i></li>
+                    </a>
+                    <a href="https://github.com/Arielitoz" target="blank">
+                        <li><i class="fa-brands fa-github"></i></li>
+                    </a>
+                    <a href="https://www.instagram.com/darthvilha/" target="blank">
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                    </a>
+
                 </ul>
                 <button type="button" class="btn">Join the Crew!</button>
             </div>
@@ -40,140 +50,166 @@
 
         <div class="banner-title">
             <h1>"Minha fortuna terá que ser encontrada, o tesouro está todo em um lugar só, por isso o chamei de
-                <span>ONE PIECE</span>!"
+                <span onclick="playVideo()">ONE PIECE</span>!"
             </h1>
         </div>
 
-        <div>
-            <h3>Conheça a Tripulação: 'Os Chapeus de Palha'</h3>
-            <div class="teste">
-                <img src="./Assets/Images/classicNami.png" alt="">
-                <img src="./Assets/Images/zoroPng.png" alt="">
+        <div class="container-crew">
+            <div class="head-content">
+                <div class="content">
+                    Monkey D. Luffy em seu vilarejo encontra o bando de Piratas do Ruivo, sendo seu capitão Shanks.<br>
+                    Nesse encontro, Luffy come a <a href="https://onepiece.fandom.com/pt/wiki/Akuma_no_Mi" target="_blank">Fruta da Borracha (Akuma no Mi)</a>  que Shanks levava.
+                    <br>
+                    Shanks é o pirata que motiva o Luffy em sua aventura, ele dá o seu chápeu de palha ao garoto<br>
+                    Com sua determinação para ser o Rei dos Piratas, ele sai em busca de sua tripulação.
+                </div>
                 <img src="./Assets/Images/luffyPng.png" alt="">
-                <img src="./Assets/Images/56-566291_usopp-kartun-one-piece-usopp.png" alt="">
-                <img src="./Assets/Images/Sanji_(PreTimeskip)_(Original)_V2.webp">
-                <img src="./Assets/Images/Pre-Timeskip_Chopper.webp" alt="">
-                <img src="./Assets/Images/Nico-robin-02-by-candycanecroft-on-deviantart-nico-robin-transparent-689_1000.webp" alt="">
-                <img src="./Assets/Images/FrankyPNG.webp" alt="">
-                <img src="./Assets/Images/jinbei.png" alt="">
-                <img src="./Assets/Images/brook.png" alt="">
-            </div>
 
-            <!-- Primeiro Card -->
-            <div class="container">
-                <div class="card">
-                    <div class="img">
-                        <img src="./Assets/Images/luffyWanted.jpg" alt="" style="height: 300px;">
-                    </div>
-                    <h1>Monkey D. Luffy</h1>
-                    <div class="content">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolores a harum quam, error
-                            asperiores aut debitis provident non nemo? Asperiores voluptatum quasi obcaecati quis,
-                            tenetur unde veniam laudantium quisquam?
-                        </p>
-                    </div>
-                </div>
-                <!-- Segundo Card -->
-
-                <div class="card">
-                    <div class="img">
-                        <img src="./Assets//Images/zoroWanted.jpg" alt="" style="height: 300px">
-                    </div>
-                    <h1>Roronoa Zoro</h1>
-                    <div class="content">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolores a harum quam, error
-                            asperiores aut debitis provident non nemo? Asperiores voluptatum quasi obcaecati quis,
-                            tenetur
-                            unde veniam laudantium quisquam?
-                        </p>
-                    </div>
-                </div>
-
-
-                <!-- Terceiro Card -->
-
-                <div class="card">
-                    <div class="img">
-                        <img src="./Assets/Images/namiWanted.jpg" alt="" style="height: 300px; border-radius: 10px;">
-                    </div>
-                    <!-- <h1>Nami</h1> -->
-                    <div class="content">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolores a harum quam, error
-                            asperiores aut debitis provident non nemo? Asperiores voluptatum quasi obcaecati quis,
-                            tenetur
-                            unde veniam laudantium quisquam?
-                        </p>
-                    </div>
-                </div>
-
-
-            </div>
-
-
-        </div>
-        <div class="vertical-bar">
-            <div class="search-icon">
-                <i class="fa-solid fa-list"></i>
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/ariel-francisco-581a89209/" target="blank"><i
-                        class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/Arielitoz" target="blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.instagram.com/darthvilha/" target="blank"><i
-                        class="fa-brands fa-instagram"></i></a>
-            </div>
-        </div>
-
-        adasdas
-        <div>
-            <div style="margin-left: 500px;">
-                <video id="video" width="320" height="240" autoplay controls style="border-radius: 50%; border: 3px solid white;">
+                <video id="video" width="320" height="240" controls style="border: 1px solid #fff;">
+                    <!-- style="border-radius: 50%; border: 3px solid white;"> -->
                     <source src="./Assets/Movies/onePieceOpening.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
                 </video>
+                <i>Abertura PT-BR</i>
+            </div>
+            <h1>Chapeus de Palha</h>
+            <div class="slideshow" id="crew">
+                <figure>
+                    <img src="./Assets/Images/zoroPng.png" alt="">
+                    <img src="./Assets/Images/classicNami.png" alt="">
+                    <img src="./Assets/Images/56-566291_usopp-kartun-one-piece-usopp.png" alt="">
+                    <img src="./Assets/Images/Sanji_(PreTimeskip)_(Original)_V2.webp">
+                    <img src="./Assets/Images/Pre-Timeskip_Chopper.webp" alt="">
+                    <img src="./Assets/Images/Nico-robin-02-by-candycanecroft-on-deviantart-nico-robin-transparent-689_1000.webp"
+                        alt="">
+                    <img src="./Assets/Images/FrankyPNG.webp" alt="">
+                    <img src="./Assets/Images/brook.png" alt="">
+
+                    <div class="crew-content">
+                        <p>Zoro </p>
+                        <p>Nami </p>
+                        <p>Usopp </p>
+                        <p>Sanji </p>
+                        <p>Chopper</p>
+                        <p>Robin </p>
+                        <p>Franky </p>
+                        <p>Brook</p>
+                    </div>
+                </figure>
+
+            </div>
+            <h1>Inimigos:</h1>
+            <div class="container-enemies">
+                    <div class="content-enemies">
+                        <p>World Government</p>
+                        <img src="./Assets/Images/wrdGov.png" alt="">
+                        <p class="history">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident, ducimus ex eius sint reprehenderit odit alias fuga ea libero voluptas animi, officiis esse delectus mollitia beatae, dolorum fugit! Voluptatum.</p>
+                    </div>
+
+                   
+                    <div class="content-enemies">
+                        <p>Marine</p>
+                        <img src="./Assets/Images/marineFlag.jpg" alt="">
+                        <p>A marinha, submetida ao governo mundial</p>
+                    </div>
+
+                    
+                    <div class="content-enemies">
+                        <p>Younkou</p>
+                        <img src="./Assets/Images/Yonkou_Infobox.webp" style="filter: grayscale(1);"alt="">
+                        <p>Os Yonkous, também conhecidos como Imperadores do Mar.</p>
+                    </div>
+
+                    
+                    <div class="content-enemies">
+                        <p>Shichibukai</p>
+                        <img src="./Assets/Images/Shichibukai_Infobox.webp" alt="">
+                        <p>Shichibukais são piratas com concessão do governo para agirem livres, porém sob comando da marinha.</p>
+                    </div>
             </div>
 
-        </div>
-        <!-- <div class="notifications">
-            <div class="contents">
-                <small>Join Crew</small>
-                <p><a href="">Prev</a><a href="">Next</a></p>
-            </div>
-            <div class="notification-img">
-                <img src="./Assets/Images/manga-one-piece-manga-jolly-roger-icons-pirate-transparent-png-1989831.png" alt="">
-            </div>
-        </div> -->
-        <!-- <div>
-            <div class="banner-title">
-                <h1>Era uma vez um homem chamado Gol D. Roger que era o rei dos Piratas, ele tinha  Fama , Poder e Riquezas, além de seus maiores sonhos... Antes que o pendurassem numa forca, essas foram suas últimas palavras: "Minha fortuna terá que ser encontrada, o tesouro está todo em um lugar só, por isso o chamei de ONE PIECE!"
-                    
-        
-            </div>
-            <div class="banner-title">
-                <h1>'Riquezas, Fama , Poder'... Um homem conquistou tudo que o mundo tinha a oferecer
-                        O rei dos piratas Gol D. Roger, antes de ser executado suas últimas palavras levaram multidões ao mar:
-                        "Querem o meu tesouro? Fiquem a vontade para pegá-lo. Procurem, nele está tudo que este mundo pode dar à vocês;"
-                    
-                    .DO IT STRAWHAT! LIGHT UP THE LIGHT OF SHANDORAAAAAA !!!<br>
-                    CAN YOU HEAR IT , POPS? THE CITY OF GOLD EXISTS! FOR 400 YEARS IT' S BEEN HERE IN THE SKYYYYYY!</h1>
-                 <button type="button" class="btn" onclick="validarJson1()">I want to live!</button>
-                <button type="button" class="btn" onclick="validarJson2()">I want to live!</button>
-                <button type="button" class="btn" onclick="validarJson3()">I want to live!</button> 
-        </div>
-       
-        </div> -->
-        <!-- <div>
-            <iframe width="1735" height="757" src="https://www.youtube.com/embed/Vvq48IwxluA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div> -->
+            <!-- <div class="container-history">
+                <div class="container-history-content">
+                    <h3>Viagem dos Chapeus de Palha:</h3>
+                    A saga inicia em East blue:
+                    <ul>
+                        <li>Ilha Dawn - Lar de origem do luffy</li>
+                        <li>Shells Town - Base da Marinha ; Zoro</li>
+                        <li>Orange Town - Encontro com Buggy</li>
+                        <li>Syrup Village - Usopp</li>
+                        <li>Baratie - Sanji</li> 
+                        <li>Vila Cocoyasi - Arlong Park, Nami</li>
+                        <li>Loguetown - Lar de origem de Gol D. Roger e execução</li>          
+                    </ul>
 
+                    Alabasta:
+                    <ul>
+                        <li>Reverse Mountain - Encontro com Vivi e Laboon </li>
+                        <li>Whisky Peak - Baroque Works </li>
+                        <li>Little Garden - Gigantes</li>
+                        <li>Drum - Reino das Neves , Chopper</li>
+                        <li>Alabasta - Reino de Alubarna, Crocodile, Nico Robin</li>
+                    </ul>
+
+                    Skypiea:
+                    <ul>
+                        <li>Ilha Jaya - Sonhos, Teach, </li>
+                        <li>Skypiea - Ilha das nuvens, calgara e noland, sino de ouro, enel</li>
+                    </ul>
+
+                    Water 7:
+                    <ul>
+                        <li>Long ring Long Island - Foxy </li>
+                        <li>Water 7 - Carpinteiro, arrumar o Merry</li>
+                        <li>Enies Lobby - Resgate da Robin, invasão - CP9</li>
+                    </ul>
+
+                    Thriller Bark:
+                    <ul>
+                        <li>Thriller Bark - Moria, Brook</li>
+                    </ul>
+
+                    Marineford:
+                    <ul>
+                        <li>Red line</li>
+                        <li>Sabaody - Briga, almirantes, Kuma, Separação</li>
+                        <li>Amazon Lily - Luffy Haki do rei</li>
+                        <li>Impel Down - Prisão, Bon clay, Buggy, Jinbei </li>
+                        <li>Marineford - Ace, Shanks</li>
+                    </ul>
+
+                    Ilha dos Homens-Peixe::
+                    <ul>
+                        <li>Sabaody - Retorno e reencontro</li>
+                        <li>Ilha dos Homens-Peixe - Racismo, Aliança</li>
+                    </ul>
+
+                    Yonkou
+                    <ul>
+                        <li>Punk Hazard - Aliança Law, Marinha, Cesar</li>
+                        <li>Dressrosa - Doflamingo, Kaidou</li>
+                    </ul>
+
+                    Yonkou
+                    <ul>
+                        <li>Zou - Zunisha, Samurais, carrot</li>
+                        <li>Whole Cake - Big Mom, Pudding, Caponne</li>
+                        <li>Wano -</li>
+                    </ul>
+                </div>
+            </div> -->
+
+
+        </div>
+    </div>
         <script>
             var vid = document.getElementById("video");
-            vid.volume = 0.2;
             var show = document.getElementById('navLinks');
+            vid.volume = 0.2;
+
+            function playVideo() {
+                vid = autoplay
+            }
+
             function showMenu() {
                 show.style.right = "0";
             }
@@ -184,81 +220,4 @@
         </script>
 
 </body>
-
 </html>
-<script>
-    // //Teste Objetos
-    // const isTrue = true;
-    // var teste = {
-    //     test: {
-    //         isCorrect: true,
-    //         captain: "Luffy"
-    //     },
-    //     "crew":
-    //         [
-    //             {
-    //                 "name": "zoro",
-    //                 "occupation": "swordsman"
-    //             }
-    //         ],
-    //     boats: {
-    //         shipName: "Going Merry",
-    //         "alive": false,
-    //         "presentNow": "no"
-    //     },
-    //     maps: [],
-    // }
-
-    // var teste2 = [
-    //     {
-    //         "texto": 12312312
-    //     },
-    //     {
-    //         "texto": 1232321
-    //     }
-    // ];
-
-
-    // function validarJson1() {
-    //     alert(teste2);
-    //     alert(teste2.texto);
-    //     alert(teste2["texto"]);
-    //     if (isTrue) {
-    //         //Assim chama
-    //         alert(teste.test.captain);
-    //         alert(teste.boats.shipName);
-    //     }
-    //     if(teste.test.isCorrect){
-    //         alert("a")
-    //     }
-    //     if(teste["test"].isCorrect){
-    //         alert("b")
-    //     }
-    //     // if(teste[test].isCorrect){
-    //     //     alert("c")
-    //     // }
-    //     // if(teste.test[isCorrect]){
-    //     //     alert("d")
-    //     // }
-    //     if(teste.test["isCorrect"]){
-    //         alert("e")
-    //     }
-    // }
-
-    // function validarJson2() {
-    //     if (isTrue) {
-    //         // alert(teste[test].captain);
-    //         alert(teste.crew[0].name)
-    //         // alert(teste.boats[shipName]);
-    //     }
-    // }
-
-    // function validarJson3() {
-    //     if (isTrue) {
-    //         alert(teste["test"].captain);
-    //         alert(teste["boats"].shipName);
-    //         alert(teste.boats["shipName"]);
-    //     }
-    // }
-
-</script>
