@@ -2,8 +2,6 @@
 
 ## Youtube Classes
 
-https://www.youtube.com/watch?v=DTEY490qmWE
-
 ### Object Literals & Json
 
 https://mkyong.com/javascript/how-to-access-json-object-in-javascript/

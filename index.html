@@ -16,7 +16,7 @@
 
 <body>
     <div class="img-background">
-        <div class="nav-bar">
+        <div class="nav-bar" id="top">
             <div class="nav-logo">
                 <a href="#"><img src="./Assets/Images/op_logo.png"></a>
             </div>
@@ -24,13 +24,13 @@
                 <i class="fa fa-close" onclick="closeMenu()"></i>
                 <ul>
                     <a href="#">
-                        <li>Home</li>
+                        <li>Inicio</li>
                     </a>
                     <a href="#crew">
-                        <li>Crew</li>
+                        <li>Tripulacao</li>
                     </a>
-                    <a href="">
-                        <li>History</li>
+                    <a href="#inimigos">
+                        <li>Inimigos</li>
                     </a>
                     <a href="https://www.linkedin.com/in/ariel-francisco-581a89209/" target="blank">
                         <li><i class="fa-brands fa-linkedin"></i></li>
@@ -43,14 +43,14 @@
                     </a>
 
                 </ul>
-                <a href="./Pages/login.html"><button type="button" class="btn">Join the Crew!</button></a>
+                <a href="./Pages/indexEn.html"><button type="button" class="btn">English</button></a>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </div>
 
         <div class="banner-title">
             <h1>"Minha fortuna terá que ser encontrada, o tesouro está todo em um lugar só, por isso o chamei de
-                <span onclick="playVideo()">ONE PIECE</span>!"
+                <a><span onclick="runPauseVideo()">ONE PIECE</span></a>!"
             </h1>
         </div>
 
@@ -97,34 +97,46 @@
                 </figure>
 
             </div>
-            <h1>Inimigos:</h1>
+            <h1 id="inimigos">Inimigos:</h1>
             <div class="container-enemies">
                     <div class="content-enemies">
-                        <p>World Government</p>
+                        <p>Governo Mundial</p>
                         <img src="./Assets/Images/wrdGov.png" alt="">
-                        <p class="history">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident, ducimus ex eius sint reprehenderit odit alias fuga ea libero voluptas animi, officiis esse delectus mollitia beatae, dolorum fugit! Voluptatum.</p>
+                        <p class="history">
+                            O Governo Mundial é um regime global que governa o mundo há mais de 800 anos desde que foi fundado por uma aliança de 20 reinos diferentes. Desde então, cresceu muito em influência e agora se estende por mais de 170 dos países civilizados do mundo.
+                        </p>
                     </div>
 
                    
                     <div class="content-enemies">
-                        <p>Marine</p>
+                        <p>Marinha</p>
                         <img src="./Assets/Images/marineFlag.jpg" alt="">
-                        <p>A marinha, submetida ao governo mundial</p>
+                        <p>
+                            Os fuzileiros navais são uma das Três Grandes Potências do mundo, ao lado dos Quatro Imperadores e dos Sete Senhores da Guerra do Mar.
+                        </p>
                     </div>
 
                     
                     <div class="content-enemies">
                         <p>Younkou</p>
                         <img src="./Assets/Images/Yonkou_Infobox.webp" style="filter: grayscale(1);"alt="">
-                        <p>Os Yonkous, também conhecidos como Imperadores do Mar.</p>
+                        <p>Os Quatro Imperadores são os quatro capitães piratas mais notórios e mais poderosos do mundo. Eles não são aliados nem são estritamente inimigos um do outro. Em vez disso, os quatro preferem permanecer autônomos na maioria das circunstâncias.<br>
+
+                            Estes quatro residem individualmente na segunda metade da Grand Line (conhecida como Novo Mundo), exercendo influência e controle impressionantes sobre dezenas de outras tripulações piratas e ilhas autônomas. Eles formam um dos Três Grandes Poderes.</p>
                     </div>
 
                     
                     <div class="content-enemies">
                         <p>Shichibukai</p>
                         <img src="./Assets/Images/Shichibukai_Infobox.webp" alt="">
-                        <p>Shichibukais são piratas com concessão do governo para agirem livres, porém sob comando da marinha.</p>
+                        <p>
+                            Os Shichibukai("Sete Lordes do Mar da Realeza"), eram sete poderosos e notórios piratas que se aliaram ao Governo Mundial.
+                        </p>
                     </div>
+            </div>
+
+            <div class="footer">
+                <a href="#top"> Voltar ao Topo</a>
             </div>
 
             <!-- <div class="container-history">
@@ -202,12 +214,23 @@
         </div>
     </div>
         <script>
-            var vid = document.getElementById("video");
+            //Globais
+            var mediaVideo = document.getElementById("video");
             var show = document.getElementById('navLinks');
-            vid.volume = 0.2;
+            var videoTimer = false;
 
-            function playVideo() {
-                vid = autoplay
+            mediaVideo.volume = 0.3;
+
+
+            //Functions
+            function runPauseVideo() {
+                if (!videoTimer) {
+                    mediaVideo.play();
+                    videoTimer = true;
+                } else {
+                    mediaVideo.pause();
+                    videoTimer = false;
+                }
             }
 
             function showMenu() {
